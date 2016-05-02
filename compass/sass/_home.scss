@@ -1,0 +1,90 @@
+// .navigation-bar{
+//   height: 80px;
+//   background-color: #284741;
+//   position: fixed;
+//   top: 0;
+//   z-index: 100;
+//   width: 100%;
+//   .navigation-bar-left {
+//     float: left;
+//     width: 50%;
+//   }
+//   .navigation-bar-right {
+//     float: left;
+//     width: 50%;
+//   }
+// }background-color: #f2f2f2;
+.header {
+  background-color:  #ddd;
+  background-size: cover;
+  color: #ffffff;
+  height: 110px;
+}
+
+.arrow-holder {
+  height: 10px;
+  width: 10px; 
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    // border-top: 20px solid black;
+    margin-top: 10px;
+  }
+}
+
+.navigation-bar {
+  background-color: #284741;
+}
+.steps {
+  color: white;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+#step-one{
+  background: url('../images/CoffeeBags.jpg') no-repeat;
+  background-size: cover;
+  .arrow-holder {
+   .arrow-down {
+      border-top: 20px solid tan;
+    }
+  }
+}
+#step-two{
+  color: grey;
+  padding: 0;
+  img {
+    display: block;
+    transform: rotate(-20deg);
+    height: 90px;
+    margin-top: 25px;
+    border: 2px solid white;
+  }
+  
+}
+
+#step-three{
+  background-color: black;
+  position: relative;
+  height: 140px;
+  img{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    height: 95%;
+  }
+  .arrow-holder {
+   .arrow-down {
+      border-top: 20px solid black;
+    }
+  }
+}
+//     #step-three img {
+    //   position: absolute;
+    //   display: block;
+    //   top: 0;
+    //   left: 50%;
+    //   height: 95%;
+    // }
