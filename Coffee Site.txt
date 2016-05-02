@@ -1,0 +1,49 @@
+Coffee Site
+
+Technologies
+- Bootstrap
+- Compass
+- Express (version 1)
+    -- Jade
+- Express (version 2)
+   -- Angular
+- Mongo
+- Mongoose
+- Stripe (payment processor)
+
+------------------- Pages -------------------------------
+Front / Home
+  -  Nav bar
+
+Signup / REgistration page
+  - Nav bar (different than front/home nav)
+  - Registration form
+
+Login page
+   - Nav bar
+   - login form
+
+Logged-in landing page
+  - Nav bar
+  - Secondary Nav [w/active links]
+  - Turn key Content
+     -- Amount form
+
+  - Customized content (collects more info from the user)
+
+Delivery page
+  - Nav
+  - secondary nav
+  - Address Form
+
+
+Payment page
+- Order info
+- Delivery info
+- action buttons
+- payment modal (Stripe)
+
+
+Thank You page after payment is finished
+  - Nav
+  - smiley face
