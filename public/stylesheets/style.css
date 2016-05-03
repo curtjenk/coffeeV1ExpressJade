@@ -29,15 +29,30 @@ img {
 /* line 23, ../../compass/sass/_base.scss */
 .navbar .nav-line-2 {
   background-color: grey;
+  color: white;
+  width: 100%;
 }
-/* line 26, ../../compass/sass/_base.scss */
+/* line 27, ../../compass/sass/_base.scss */
+.navbar .nav-line-2 span {
+  padding-left: 4px;
+}
+/* line 30, ../../compass/sass/_base.scss */
+.navbar .nav-line-2 li {
+  list-style-type: none;
+}
+/* line 32, ../../compass/sass/_base.scss */
+.navbar .nav-line-2 li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 39, ../../compass/sass/_base.scss */
 .navbar img {
   display: block;
   margin-top: 2px;
   height: 40px;
 }
 
-/* line 32, ../../compass/sass/_base.scss */
+/* line 45, ../../compass/sass/_base.scss */
 button.btn {
   background-color: #003300;
 }
@@ -141,7 +156,7 @@ button.btn {
 
 /* line 1, ../../compass/sass/_order.scss */
 .order {
-  margin-top: 20px;
+  margin-top: 90px;
   color: #000;
 }
 /* line 4, ../../compass/sass/_order.scss */
