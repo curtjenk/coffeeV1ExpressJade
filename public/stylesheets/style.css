@@ -59,22 +59,33 @@ img {
   margin-bottom: 10px;
 }
 
-/* line 45, ../../compass/sass/_home.scss */
+/* line 46, ../../compass/sass/_home.scss */
+#step-one:before, #step-three:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 10px solid #f2f2f2;
+  border-right: 10px solid transparent;
+  width: 0;
+}
+
+/* line 54, ../../compass/sass/_home.scss */
 #step-one {
   background: url("../images/CoffeeBags.jpg") no-repeat;
   background-size: cover;
 }
-/* line 49, ../../compass/sass/_home.scss */
+/* line 58, ../../compass/sass/_home.scss */
 #step-one .arrow-holder .arrow-down {
   border-top: 20px solid tan;
 }
 
-/* line 54, ../../compass/sass/_home.scss */
+/* line 63, ../../compass/sass/_home.scss */
 #step-two {
   color: grey;
   padding: 0;
 }
-/* line 57, ../../compass/sass/_home.scss */
+/* line 66, ../../compass/sass/_home.scss */
 #step-two img {
   display: block;
   transform: rotate(-20deg);
@@ -83,13 +94,13 @@ img {
   border: 2px solid white;
 }
 
-/* line 67, ../../compass/sass/_home.scss */
+/* line 76, ../../compass/sass/_home.scss */
 #step-three {
   background-color: black;
   position: relative;
   height: 140px;
 }
-/* line 71, ../../compass/sass/_home.scss */
+/* line 80, ../../compass/sass/_home.scss */
 #step-three img {
   position: absolute;
   display: block;
@@ -97,7 +108,7 @@ img {
   left: 50%;
   height: 95%;
 }
-/* line 79, ../../compass/sass/_home.scss */
+/* line 88, ../../compass/sass/_home.scss */
 #step-three .arrow-holder .arrow-down {
   border-top: 20px solid black;
 }
