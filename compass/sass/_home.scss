@@ -1,24 +1,18 @@
-// .navigation-bar{
-//   height: 80px;
-//   background-color: #284741;
-//   position: fixed;
-//   top: 0;
-//   z-index: 100;
-//   width: 100%;
-//   .navigation-bar-left {
-//     float: left;
-//     width: 50%;
-//   }
-//   .navigation-bar-right {
-//     float: left;
-//     width: 50%;
-//   }
-// }background-color: #f2f2f2;
 .header {
-  background-color:  #ddd;
+   background: url('../images/coffee.jpg') no-repeat;
+  // background-color: #e6ccb3;
+  // background-color:  #ddd;
   background-size: cover;
+  font-weight: bold;
+  // font-family: cursive;
+  font-size: 30px;
   color: #ffffff;
   height: 110px;
+}
+.how {
+  margin-top: 4px;
+  font-size: 20px;
+  color: #86582d;
 }
 
 .arrow-holder {

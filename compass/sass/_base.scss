@@ -8,10 +8,17 @@ img {
 }
 
 .navbar {
+  padding-top: 5px;
+  padding-bottom: 3px;
   text-align: center;
     .btn-link {
         color: white;
+        text-decoration: none;
+
     }
+    .btn-link:hover {
+          color: white;
+        }
     background-color: #003300;
     img {
         display: block;
