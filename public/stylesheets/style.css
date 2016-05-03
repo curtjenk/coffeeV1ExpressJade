@@ -142,28 +142,24 @@ button.btn {
 /* line 1, ../../compass/sass/_order.scss */
 .order {
   margin-top: 20px;
+  color: #000;
 }
-
 /* line 4, ../../compass/sass/_order.scss */
-.plans {
+.order .plans {
   margin-top: 20px;
 }
-
 /* line 7, ../../compass/sass/_order.scss */
-.order-card {
+.order .order-card {
   background-color: white;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px lightgrey;
 }
-/* line 9, ../../compass/sass/_order.scss */
-.order-card .order-cost {
+/* line 11, ../../compass/sass/_order.scss */
+.order .order-card .order-cost {
   margin-top: 15px;
 }
-
-/* line 13, ../../compass/sass/_order.scss */
-.select-grind {
+/* line 15, ../../compass/sass/_order.scss */
+.order .select-grind {
   height: 25px;
-}
-
-/* line 16, ../../compass/sass/_order.scss */
-.plans > > select {
   margin-bottom: 5px;
 }
