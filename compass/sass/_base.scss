@@ -1,6 +1,7 @@
 body {
     padding-top: 49px;
     background-color: #f2f2f2;
+    color: #003300;
 }
 
 img {
@@ -8,21 +9,26 @@ img {
 }
 
 .navbar {
-  padding-top: 5px;
-  padding-bottom: 3px;
-  text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-align: center;
     .btn-link {
         color: white;
         text-decoration: none;
-
     }
     .btn-link:hover {
-          color: white;
-        }
+        color: white;
+    }
     background-color: #003300;
+    .nav-line-2 {
+        background-color: grey;
+    }
     img {
         display: block;
         margin-top: 2px;
         height: 40px;
     }
+}
+button.btn {
+  background-color: #003300;
 }

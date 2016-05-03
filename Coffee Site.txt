@@ -10,6 +10,7 @@ Technologies
 - Mongo
 - Mongoose
 - Stripe (payment processor)
+- bcrypt for hashing password
 
 ------------------- Pages -------------------------------
 Front / Home

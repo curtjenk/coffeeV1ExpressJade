@@ -3,35 +3,47 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var mongoUrl = "mongodb://localhost:27017/coffee";
 var Account = require('../models/account');
+var bcrypt = require('bcrypt-nodejs');
+
 
 mongoose.connect(mongoUrl);
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Express' });
 });
 
 router.get('/register', function(req, res, next) {
-  res.render('register', {failure: req.query.failure});
+    res.render('register', { page: 'register', failure: req.query.failure });
 });
 
 router.post('/register', function(req, res, next) {
-  console.log("here");
-  if (req.body.password != req.body.password2) {
-    res.redirect('/register?failure=password');
-  }
 
-  var newAccount = new Account({
-    username: req.body.username,
-    password: req.body.password,
-    emailAddress: req.body.emailAddress
-  });
-
-  newAccount.save();
-
-  res.json(req.body);
+    if (req.body.password != req.body.password2) {
+        res.redirect('/register?failure=password');
+    } else {
+        var newAccount = new Account({
+            username: req.body.username,
+            password: bcrypt.hashSync(req.body.password),
+            email: req.body.email,
+            createDate: new Date(),
+            modifiedDate: new Date()
+        });
+        newAccount.save();
+        req.session.username = req.body.username;
+        res.redirect('/order')
+    }
 });
+
+router.get('/order', function(req, res, next) {
+    if (!req.session.username) {
+        res.redirect('/login');
+    } else {
+        res.render('order', { username: req.session.username, orderpage: true });
+    }
+
+})
 
 
 

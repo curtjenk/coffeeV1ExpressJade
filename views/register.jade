@@ -3,13 +3,13 @@ extends layout
 block content
 	div.container-fluid
 		.row
-			.col-sm-6.text-center
+			.col-sm-6.col-sm-offset-3.text-center
 				h1 Registration
 				h4 Pick a username and password
 		.row
-			if (failure)
-				h2 You must enter the same password in both fields.
-			.col-sm-6.registration-wrapper.text-center
+			.col-sm-6.col-sm-offset-3.registration-wrapper.text-center
+				if (failure)
+					h2.pwd-error You must enter the same password in both fields.
 				form(role="form", action="/register", method="post", id="registration-form" name="registration")
 					.form-group
 						label Username

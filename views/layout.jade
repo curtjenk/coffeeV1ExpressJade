@@ -6,18 +6,8 @@ html
 		link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
 		link(rel='stylesheet', href='/stylesheets/style.css')
 	body
-		nav.navbar.navbar-default.navbar-fixed-top
-			.container-fluid.text-center
-				.col-sm-2
-					a(href="/")
-						img(src="images/dc_roasters_200x124_lt.png")
-				.col-sm-3.col-sm-offset-2
-					a(href="/login")
-						button.btn.btn-link(type="submit") Log In
-				.col-sm-3
-					a(href="/register")
-						button.btn.btn-link(type="submit") Register
-		//pulls "content" variable from index.jade
-		block content  
-		.footer.col-sm-12.text-center
-			p &copy 2016 DigitalCrafts Brews
+		include nav
+		block content
+			p This is default content
+		include footer
+		
