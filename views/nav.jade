@@ -1,16 +1,22 @@
 nav.navbar.navbar-default.navbar-fixed-top
-  .container-fluid.text-center
-    .row
-      .col-sm-2
-        a(href="/")
-          img(src="images/dc_roasters_200x124_lt.png")
-      .col-sm-3.col-sm-offset-2
-        a(href="/login")
-          button.btn.btn-link(type="submit") Log In
-      .col-sm-3
-        a(href="/register")
-          button.btn.btn-link(type="submit") Register
-    if orderpage        
-    .row.nav-line-2
-      .col-sm-12.text-center
-        div I am the second line of the nav
+	.container-fluid.text-center
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#bs-navbar-collapse-1", aria-expanded="false")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="/")
+					img(src="images/dc_roasters_200x124_lt.png")
+			#bs-navbar-collapse-1.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li
+						a(href="/login")
+							button.btn.btn-link(type="submit") Log In
+					li
+						a(href="/register")
+							button.btn.btn-link(type="submit") Register
+		if orderpage
+			.nav-line-2
+				.col-sm-12.text-center
+					div I am the second line of the nav

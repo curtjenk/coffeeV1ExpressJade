@@ -37,11 +37,11 @@ router.post('/register', function(req, res, next) {
 });
 
 router.get('/order', function(req, res, next) {
-    if (!req.session.username) {
-        res.redirect('/login');
-    } else {
+    // if (!req.session.username) {
+    //     res.redirect('/login');
+    // } else {
         res.render('order', { username: req.session.username, orderpage: true });
-    }
+    // }
 
 })
 
