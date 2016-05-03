@@ -89,7 +89,7 @@ img {
 #step-two img {
   display: block;
   transform: rotate(-20deg);
-  height: 90px;
+  height: 100px;
   margin-top: 25px;
   border: 2px solid white;
 }
